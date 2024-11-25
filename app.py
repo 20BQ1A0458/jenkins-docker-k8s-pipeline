@@ -11,7 +11,7 @@ def login():
     password = data.get('password')
 
     if username in users and users[username] == password:
-        return jsonify({"message": "Login successful"}), 200
+        return jsonify({"message": "Login is successful"}), 200
     return jsonify({"message": "Invalid credentials"}), 401
 
 if __name__ == "__main__":
